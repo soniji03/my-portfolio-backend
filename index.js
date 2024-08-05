@@ -9,6 +9,8 @@ const errorHandler = require('./middleware/errorHandler');
 const authRoutes = require('./middleware/auth');
 const app = express();
 
+
+
 const corsOptions = {
   origin: process.env.FRONTEND_URL,
   optionsSuccessStatus: 200 // For legacy browser support
