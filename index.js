@@ -15,7 +15,9 @@ const corsOptions = {
   origin: process.env.FRONTEND_URL,
   optionsSuccessStatus: 200 // For legacy browser support
 };
-app.use(cors(corsOptions));
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://react-authetn-tication.netlify.app']
+}));
 
 app.use(authRoutes);
 app.use(express.json());
