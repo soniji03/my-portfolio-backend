@@ -16,7 +16,7 @@ const corsOptions = {
   optionsSuccessStatus: 200 // For legacy browser support
 };
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://react-authetn-tication.netlify.app']
+  origin: ['http://localhost:5173', 'https://fullstackdevloperwithom.netlify.app']
 }));
 
 app.use(authRoutes);
